@@ -1,6 +1,6 @@
 package CH02_VARIABLES;
 // Overflow, Conversion
-public class CH02_14_오버플로우_변환 {
+public class CH02_14_Overflow {
     public static void main(String[] args) {
 
 System.out.println("-----------------------------------------------------------------------------------");
