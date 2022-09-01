@@ -1,5 +1,5 @@
 package CH04_CD_RP;
-// if-else, else if, duplication
+// if-else, else if, duplication, Switch
 import java.util.Scanner;
 //조건문 : 조건을 만족하는"때만" {}를 수행
 //반복문 : 조건을 만족하는"동안" {}를 수행
@@ -80,6 +80,40 @@ System.out.println("------------------------------------------------------------
 			grade1 = 'C';
 		}	
 		System.out.printf("당신의 학점은 %c%c입니다.%n", grade1, opt);
+	    
+	    System.out.println("-----------------------------------------------------------------------------------");
+	    
+// switch문 : 처리해야 하는 경우의 수가 많을 때 쓰는 -> if - else if와 변환가능
+
+	System.out.println("[switch문으로 몇월이 어느계절인지?]");
+        System.out.print("현재 월을 입력하세요.>");
+
+		int month = scanner.nextInt();  // 화면을 통해 입력받은 숫자를 month에 저장
+
+		switch(month) {
+			case 3: 
+			case 4: 
+			case 5:
+				System.out.println("현재의 계절은 봄입니다.");
+				break; // switch문을 벗어난다. <- 실수로 빼먹는 경우 많으니 조심!!!
+			case 6: case 7: case 8:
+				System.out.println("현재의 계절은 여름입니다.");
+				break;
+			case 9: case 10: case 11:
+				System.out.println("현재의 계절은 가을입니다.");
+				break;
+            //		case 12:	case 1: case 2:
+			default: // 조건식의 결과와 일치하는 case문이 없을때 수행
+				System.out.println("현재의 계절은 겨울입니다.");
+		}
+		
+System.out.println("-----------------------------------------------------------------------------------");
+// switch문의 제약조건
+    // 1. 조건식 결과는 정수 또는 문자열이어야
+    // 2. case문의 값은 정수 상수(문자포함), 문자열만 가능하며, 중복되지 않아야.
+    // 3. 변수, 실수 불가
+
+System.out.println("[switch문으로 몇월이 며칠이 있는지?]");
 
     }
 }
