@@ -2,7 +2,7 @@ package CH03_OPERATOR;
 // Operator2
 import java.util.Scanner;
 
-public class CH03_13_연산자 {
+public class CH03_13_Operator2 {
     public static void main(String[] args) {
 
 System.out.println("-----------------------------------------------------------------------------------");
