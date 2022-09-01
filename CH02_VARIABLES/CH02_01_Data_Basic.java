@@ -1,6 +1,6 @@
 package CH02_VARIABLES;
 // Data,Variable Type, Constant, Literal,Primitiv-Reference Type, Change Two Type
-public class CH02_1_데이터기본 {
+public class CH02_01_Data_Basic {
     public static void main(String[] args) {
 
 System.out.println("-----------------------------------------------------------------------------------");
