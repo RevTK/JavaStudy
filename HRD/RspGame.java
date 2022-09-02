@@ -108,11 +108,13 @@ public class RspGame {
 
         System.out.println("최종승률2 : " +  winRate);
 
+        // // 일단 try구문이 실행, 문제가 발생하면 catch
         // try {
-            
+        // System.out.println("최종승률1 : " +  ((double)winTotal / (gameTotal - draw)) * 100 + "%");
         // } catch (Exception e) {
-        //     // TODO: handle exception
+        //     System.out.println("0으론 나눌수 없어요");
+        //     //e.printStackTrace(); <- 개발자 확인용
         // }
 
+        }
     }
-}
